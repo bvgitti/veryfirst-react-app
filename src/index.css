@@ -1,13 +1,84 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:wght@300;400;500&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+  max-width: 600px;
+  height: 600px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  border: 4px solid darkolivegreen;
+}
+
+.Header {
+  background-color: darkolivegreen;
+  color:beige;
+  font-size: 30px;
+  margin: 0;
+  padding: 20px;
+}
+
+main {
+  display: inline;
+}
+
+.contactForm {
+  background-color: darkolivegreen;
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+.input {
+  width: 200px;
+  height: 30px;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.contact {
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 0 0 10px;
+  margin: 0;
+}
+
+.contactName {
+  margin: 10px 0 20px 100px;
+}
+
+#delButton {
+  height: 30px;
+  width: 80px;
+  background-color: brown;
+  font-size: 16px;
+  color: beige;
+  border: 0;
+  border-radius: 5px;
+  position: relative; 
+  margin: 10px 0 0 400px;
+}
+
+.addButton {
+  height: 30px;
+  min-width: 90px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.emptyList {
+  display: block;
+  margin: 100px 0 0 220px;
+}
+
+.footer {
+  display: inline;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: darkolivegreen;
 }
