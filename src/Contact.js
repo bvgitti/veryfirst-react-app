@@ -5,9 +5,10 @@ function Contact(props) {
 
     return (
         <div className='contact' style={{ backgroundColor: id%2===1 ? 'lightgray' : 'white'}}>
-            <p>contact name:</p>
+            <p className='contactText'>contact name:</p>
             <h3 className='contactName'>{name}</h3>
-            <p>contact email: {email}</p>
+            <p className='contactText'>contact email:</p>
+            <p id='contactMail'>{email}</p>
             <button id='delButton' onClick={()=> props.handleDelete(id)}>Delete</button>
             <hr/>
         </div>

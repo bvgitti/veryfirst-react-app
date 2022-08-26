@@ -8,70 +8,113 @@
 
 
 body {
-  max-width: 600px;
-  height: 600px;
-  margin: auto;
+  display: block;
+  max-width: 60%;
+  height: 95vh;
+  margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   border: 4px solid darkolivegreen;
+  box-shadow: 0 0 20px darkolivegreen;
 }
 
 .Header {
-  background-color: darkolivegreen;
+  font-size: 4vw;
   color:beige;
-  font-size: 30px;
   margin: 0;
-  padding: 20px;
+  padding: 4vw;
+  background-color: darkolivegreen;
+  text-shadow: 0 0 5px lightgreen;
 }
 
 main {
-  display: inline;
+  display: block;
+  justify-items: center;
+  align-content: center;
+  overflow-y: hidden;
+  width: 100%;
+  height: calc(94vh - 14vw);
 }
 
 .contactForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   background-color: darkolivegreen;
-  padding-bottom: 10px;
-  margin: auto;
+  padding-bottom: 2vh;
 }
 
 .input {
-  width: 200px;
-  height: 30px;
-  font-size: 18px;
-  margin: 0 10px;
+  width: 20vw;
+  height: calc(2vw + 2vh);
+  font-size: 2vw;
+  padding-left: 1vw;
+  border: none;
+  border-radius: 5px;
+}
+
+#addButton {
+  width: 12vw;
+  height: calc(2vw + 2vh);
+  font-size: 2vw;
+  font-weight: 400;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+}
+
+#addButton:hover {
+  background-color: black;
+  color: white;
+  font-size: 2.5vw;
+}
+
+.contactList {
+  display: block;
+  width: 100%;
+  height: calc(90vh - 16vw);
+  max-height:max-content;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .contact {
-  font-family: 'Roboto', sans-serif;
-  padding: 10px 0 0 10px;
-  margin: 0;
+  display: block;
+}
+
+.contactText {
+  font-size: 1.6vw;
+  padding-left: 1vw;
 }
 
 .contactName {
-  margin: 10px 0 20px 100px;
+  font-size: 3vw;
+  text-align: center;
+}
+
+#contactMail {
+  display: block;
+  font-size: 2vw;
+  text-align: center;
 }
 
 #delButton {
-  height: 30px;
-  width: 80px;
+  display: block;
+  width: 10vw;
+  height: calc(2vw + 2vh);
+  font-size: 2vw;
+  font-weight: 400;
   background-color: brown;
-  font-size: 16px;
-  color: beige;
-  border: 0;
+  border: none;
   border-radius: 5px;
-  position: relative; 
-  margin: 10px 0 0 400px;
-}
-
-.addButton {
-  height: 30px;
-  min-width: 90px;
-  font-size: 16px;
-  font-weight: 600;
+  margin-left: 44vw;
+  margin-bottom: 1vh;
 }
 
 .emptyList {
   display: block;
-  margin: 100px 0 0 220px;
+  text-align: center;
+  font-size: 3vw;
+  margin: 20%;
 }
 
 .footer {

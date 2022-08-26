@@ -1,6 +1,6 @@
 import React from "react";
 import ContactList from "./ContactList";
-import EditContacts from "./EditContacts";
+import AddNewContact from "./AddNewContact";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -11,7 +11,7 @@ function App() {
 
   // loading contacts to state
   React.useEffect(()=> {
-    setContacts(JSON.parse(localStorage.getItem('ContactDb')))
+    setContacts(JSON.parse(localStorage.getItem('ContactDb')) || [])
   }, []);
 
   const handleChange= (event)=> {
@@ -60,7 +60,7 @@ function App() {
     <>
       <Header />
       <main>
-          <EditContacts 
+          <AddNewContact 
             newContact={newContact} 
             handleSubmit={handleSubmit} 
             handleChange={handleChange}

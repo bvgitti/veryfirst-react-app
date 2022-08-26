@@ -1,5 +1,5 @@
 
-function EditContacts({newContact, handleSubmit, handleChange}) {
+function AddNewContact({newContact, handleSubmit, handleChange}) {
     return (
         <form className='contactForm' onSubmit={handleSubmit}>
             <input 
@@ -19,10 +19,9 @@ function EditContacts({newContact, handleSubmit, handleChange}) {
                 onChange={handleChange} 
                 placeholder='enter email'
             />
-            <button className="addButton">+ contact</button>
-            <hr/>
+            <button id="addButton">+ contact</button>
         </form>
     )
 };
 
-export default EditContacts;
+export default AddNewContact;
